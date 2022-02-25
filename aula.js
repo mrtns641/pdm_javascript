@@ -1,6 +1,53 @@
-const a = []
-const b = a
-console.log(a === b)
+// FUNÇÕES
+
+const nomes = ["Ana Maria", "Antonio", "Rodrigo", "Alex", "Cristina"]
+
+//arrow function (expressão lambda =>)
+//() => {}
+
+//estamos verificando se o nome começa com A
+const resultante = nomes.filter((n) => {
+    return n.startsWith("A")
+})
+console.log(resultante)
+
+// class Pessoa {
+//     public void andar () {
+
+//     }
+//     variavel = andar;
+// }
+
+// void f (int a,float b) {
+
+// }
+// f(1,2)
+
+// const nomes = [1, 2]//constante não vai fazer referencia a outro objeto
+// console.log (nomes)
+// nomes[0] = 3
+// console.log (nomes)
+//nomes[225] = "oi"
+//console.log(nomes.length)
+// nome = "oi"
+
+//int v [10];
+// v1 = []
+// v1[0] = 3.4
+// v1[10] = 2
+// v1[2] = "abc"
+
+// VARIÁVEIS
+// console.log(v1.length)
+// console.log(v1)
+
+// for (let i = 0; i < v1.length; i++) {
+//     console.log (v1[i])
+// }
+
+// const a = []
+// const b = a
+// console.log(a === b)
 
 // Thread.stop()
 
