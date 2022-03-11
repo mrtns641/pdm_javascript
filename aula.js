@@ -1,15 +1,179 @@
+const nome = "João"
+const idade = 17
+
+//atalho
+const objeto = { nome, idade }
+
+const objeto2 = {
+    nome: nome,
+    idade: idade
+}
+
+
+// let calc = {
+//     soma: (a, b) => a + b,
+//     subtracao: function (a, b) {
+//         return a - b
+//     }
+// }
+// console.log(calc.soma(2,3))
+// console.log(calc.subtracao(5,4))
+
+
+
+// // //uma concessionaria que tem cnpj e endereco
+// // e carros em estoque
+// // cada carro tem marca, modelo e ano de fab
+// let c = {
+//     cnpj: '1111111111111111-45',
+//     endereco: {
+//         logradouro: 'Rua A',
+//         numero: 10,
+//         bairro: "Vila J"
+//     },
+//     veiculo: [
+//         {
+//             marca: 'Ford',
+//             modelo: 'Ka',
+//             ano: 2012,
+//             revisoes: [
+//                 {
+//                     data: '12/02/2013',
+//                     consultor: "Andre"
+//                 }, 
+//                 {
+//                     data: '14/02/2014',
+//                     consultor: 'Pedro'
+//                 }
+//             ]
+//         }, 
+//         {
+//             marca: 'Volks',
+//             modelo: 'Nivus',
+//             ano: 2020
+//         }, 
+//         {
+//             marca: 'Chevrolet',
+//             modelo: 'Onix',
+//             ano: 2021
+//         }
+//     ]
+// }
+
+
+// //exibir nome pedro
+// console.log(c.veiculo[0].revisoes[1].consultor)
+
+
+// let p = {
+//     nome: "Maria",
+//     idade: 22,
+//     endereco: {
+//         logradouro: "Rua B",
+//         numero: 12
+//     }
+// }
+// console.log(p.nome)
+// console.log(p['idade'])
+// console.log(p.endereco.logradouro)
+// console.log(p['endereco'].numero)
+// console.log(p['endereco']['numero'])
+// console.log(p.endereco['numero'])
+
+// JavaScript Object Notification
+// JSON
+//pares chaves/valor
+// let pessoa = {
+//     nome: "João",
+//     idade: 17
+// }
+
+// console.log(pessoa.nome)
+// console.log(pessoa['idade'])
+
+
+// const triplo = (n) => {
+//     const r = n + n
+//     r = r + n
+//     return (r + 2 + 
+//         r + 2 + r + 2);
+// }
+
+// const triplo = n => { n * 3 } //sem return implicito -> undefined 
+// console.log(triplo(2))
+
+// const dobro = n => n * 2 //return implicito
+// const dobro = function (n) {
+//         return 2 * n
+//     }
+// console.log(dobro(5))
+
+//arrow functions
+// const hello = () => ("Hello")
+// console.log(hello())
+
+// const triplo = function (n = 1) { // n = 1 -> valor padrão para evitar undefined 
+//     return n * 3
+// }
+// console.log(triplo())
+// console.log(triplo(2)) //sobrecarga de metodo
+
+
+
+// const dobro = function (n) {
+//     return 2 * n
+// }
+// console.log(dobro (5))
+
+// function soma (a, b) {
+//     return a + b  
+// }
+
+// const res = soma (2, 3)
+// console.log (res)
+
+
+// function hello () {
+//     console.log("Oi")
+// }
+
+// hello()
+
+// function hello (nome) {
+//     console.log("Hello, " + nome)
+// }
+
+// hello("João")
+
+// const valores = [1, 2, 3, 4]
+// //reduce
+// const soma = valores.reduce((ac, v) => ac + v)
+// console.log(soma)
+
 // FUNÇÕES
 
-const nomes = ["Ana Maria", "Antonio", "Rodrigo", "Alex", "Cristina"]
+// const nomes = ["Ana Maria", "Antonio", "Rodrigo", "Alex", "Cristina"]
+
+// const todosComecamComA = nomes.every ((n) => n.startsWith("A"))
+// console.log(todosComecamComA)
+
+// utilizando a map, escreva um trecho de código que produz 
+// um vetor que contém os comprimentos das strings existentes
+// [9, 7, 7, 4, 8]
+// const res = nomes.map((x) => x.length)
+// console.log (res)
+
+// const res = nomes.map((nome) => nome.charAt(0))
+// console.log (res)
 
 //arrow function (expressão lambda =>)
 //() => {}
 
 //estamos verificando se o nome começa com A
-const resultante = nomes.filter((n) => {
-    return n.startsWith("A")
-})
-console.log(resultante)
+// const resultante = nomes.filter((n) => {
+//     return n.startsWith("A")
+// })
+// console.log(resultante)
 
 // class Pessoa {
 //     public void andar () {
